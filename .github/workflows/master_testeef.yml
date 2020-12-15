@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'testeef'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_3ccbd4e203df4a77a55c11b3ad8bbd6e }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_801a51dd15e04f91bc2abe262a2b574a }}
         package: ${{env.DOTNET_ROOT}}/myapp 
