@@ -33,3 +33,8 @@ J:\Desenvolvimento\Projetos\Testes2020\testeef\bin\Debug\netcoreapp3.1\System.Co
 J:\Desenvolvimento\Projetos\Testes2020\testeef\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 J:\Desenvolvimento\Projetos\Testes2020\testeef\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 J:\Desenvolvimento\Projetos\Testes2020\testeef\obj\Debug\netcoreapp3.1\testeef.csproj.CopyComplete
+J:\Desenvolvimento\Projetos\Testes2020\testeef\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+J:\Desenvolvimento\Projetos\Testes2020\testeef\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+J:\Desenvolvimento\Projetos\Testes2020\testeef\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+J:\Desenvolvimento\Projetos\Testes2020\testeef\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+J:\Desenvolvimento\Projetos\Testes2020\testeef\obj\Debug\netcoreapp3.1\testeef.MvcApplicationPartsAssemblyInfo.cs

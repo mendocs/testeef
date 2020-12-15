@@ -1,3 +1,4 @@
+using System.Net.Mime;
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
@@ -29,20 +30,52 @@ namespace testeef
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<DataContext> (opt => opt.UseInMemoryDatabase ("Database"));
+             services.AddDbContext<DataContext> (opt => opt.UseInMemoryDatabase ("Database"));
+
+            
             
             services.AddScoped<DataContext,DataContext>();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("EnableCORS", builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().Build();
+                });
+            });
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
             services.AddControllers();
+
+            services.AddSwaggerGen();
+
+            //var serviceCollection = new Microsoft.Extensions.DependencyInjection.ServiceCollection();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DataContext datacontext)
         {
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });            
+
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
+
+            app.UseCors("EnableCORS");
+
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -53,6 +86,18 @@ namespace testeef
             {
                 endpoints.MapControllers();
             });
+
+            /*
+            var ttt = new Microsoft.EntityFrameworkCore.DbContextOptionsBuilder<DataContext>();
+            var uuu= ttt.UseInMemoryDatabase("Database1").Options;
+            //DbContextOptions<DataContext>
+            var datacontext1 = new DataContext(uuu);
+            */
+
+            CargaInicial cargaInicial = new CargaInicial();
+            cargaInicial.Inclui1produtoTeste(datacontext);
+
+
         }
     }
 }

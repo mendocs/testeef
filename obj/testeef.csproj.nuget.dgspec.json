@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj": {}
+    "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj": {}
   },
   "projects": {
-    "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj": {
+    "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
+        "projectUniqueName": "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
         "projectName": "testeef",
-        "projectPath": "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
+        "projectPath": "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
         "packagesPath": "C:\\Users\\mendocs\\.nuget\\packages\\",
-        "outputPath": "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\obj\\",
+        "outputPath": "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mendocs\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -39,6 +39,10 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
             }
           },
           "imports": [
