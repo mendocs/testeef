@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj": {}
+    "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj": {}
   },
   "projects": {
-    "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj": {
+    "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
+        "projectUniqueName": "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
         "projectName": "testeef",
-        "projectPath": "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
+        "projectPath": "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
         "packagesPath": "C:\\Users\\mendocs\\.nuget\\packages\\",
-        "outputPath": "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\obj\\",
+        "outputPath": "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mendocs\\AppData\\Roaming\\NuGet\\NuGet.Config"

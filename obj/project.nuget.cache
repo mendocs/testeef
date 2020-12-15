@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ky/KK/k6Fk8G0OYiRePyjbr7lcIvl/wVTimJfqLXcolYEFhLH0i9CqeS/ZDCzh+gRqVrtGZN+oIhPzfHryWvLg==",
+  "dgSpecHash": "ox89XmqxInh2CjszA1D1QWgE5v91Y92uEiipvUZPyanaO8oqh/7XRuNvGjxmLciiMGtcJRebJVdkZr/xI9uaug==",
   "success": true,
-  "projectFilePath": "j:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
+  "projectFilePath": "J:\\Desenvolvimento\\Projetos\\Testes2020\\testeef\\testeef.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mendocs\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\mendocs\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0\\microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",

@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using testeef.Data;
 using testeef.Models;
 using System.Linq;
+using Microsoft.Extensions.Configuration;
 
 namespace testeef.Controllers
 {
@@ -20,7 +21,7 @@ namespace testeef.Controllers
 
         [HttpGet]
         [Route("")]
-        public async Task<ActionResult<List<Product>>> Get([FromServices] DataContext context)
+        public async Task<ActionResult<List<Product>>> Get([FromServices] DataContext context, [FromServices] IConfiguration  config)
         {
 
            
@@ -29,6 +30,7 @@ namespace testeef.Controllers
 
             var products = await context.Products.Include(x => x.Category) .ToListAsync();
             //var products = await context.Products.ToListAsync();
+            products[0].Description += config["Ambiente"];
             return products;
         } 
 
