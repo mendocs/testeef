@@ -14,6 +14,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using testeef.Data;
+using Microsoft.AspNetCore.Http;
+using testeef.Models;
 
 namespace testeef
 {
@@ -30,7 +32,8 @@ namespace testeef
         public void ConfigureServices(IServiceCollection services)
         {
 
-             services.AddDbContext<DataContext> (opt => opt.UseInMemoryDatabase ("Database"));
+             //services.AddDbContext<DataContext> (opt => opt.UseInMemoryDatabase ("Database"));
+             services.AddDbContext<DataContext> (opt => opt.UseSqlServer (Configuration.GetConnectionString("DefaultConnection")));
 
             
             
@@ -55,7 +58,7 @@ namespace testeef
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DataContext datacontext)
+        public async void  Configure(IApplicationBuilder app, IWebHostEnvironment env, DataContext datacontext)
         {
 
             app.UseSwagger();
@@ -93,9 +96,18 @@ namespace testeef
             //DbContextOptions<DataContext>
             var datacontext1 = new DataContext(uuu);
             */
+            
 
-            CargaInicial cargaInicial = new CargaInicial();
-            cargaInicial.Inclui1produtoTeste(datacontext);
+            //var servico = context.RequestServices.GetService<DataContext>();
+
+            //var qq =  datacontext.Database.EnsureCreatedAsync();
+
+            //var existeProduto = await datacontext.Products.AnyAsync<Product>();
+
+            //CargaInicial cargaInicial = new CargaInicial();
+            //cargaInicial.Inclui1produtoTeste(datacontext);
+
+            //CargaInicial.Inclui1produtoTeste(datacontext);
 
 
         }
