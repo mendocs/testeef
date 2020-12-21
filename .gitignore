@@ -2,6 +2,7 @@ bin
 obj
 Properties
 .vscode
+appsettings.Development.json
 bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
 bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
 bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
