@@ -39,7 +39,7 @@ namespace testeef
             
             services.AddScoped<DataContext,DataContext>();
 
-            /*
+            
 
             services.AddCors(options =>
             {
@@ -48,7 +48,7 @@ namespace testeef
                     builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().Build();
                 });
             });
-            */
+            
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
@@ -80,6 +80,8 @@ namespace testeef
 
 
             app.UseCors("EnableCORS");
+
+          
 
             
             app.UseHttpsRedirection();
